@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multi Chat link Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		body {
+			background-color: #1c1c1c;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		
+		.logo {
+			margin-bottom: 1rem;
+			width: 100px;
+			height: 100px;
+			background-image: url('https://png.pngtree.com/element_our/png/20181229/vector-chat-icon-png_302635.jpg');
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+		}
+		
+		h1 {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 1rem;
+		}
+		
+		input {
+			padding: 0.5rem;
+			border: none;
+			border-radius: 0.25rem;
+			margin-bottom: 1rem;
+			width: 100%;
+			max-width: 400px;
+			font-size: 1rem;
+		}
+		
+		button {
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 0.25rem;
+			background-color: #009688;
+			color: #fff;
+			font-size: 1rem;
+			cursor: pointer;
+			margin-bottom: 1rem;
+			transition: background-color 0.2s ease-in-out;
+		}
+		
+		button:hover {
+			background-color: #00796b;
+		}
+		
+		.footer {
+			background-color: #333;
+			color: #fff;
+			font-size: 0.8rem;
+			padding: 1rem;
+			text-align: center;
+			margin-top: auto;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo"></div>
+		<h1>Multi Chat link Generator</h1>
+		 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate WhatsApp and Telegram links</title>
+  </head>
+  <body>
+    <form>
+      <label for="phone"><align="middle">Enter a 10-digit phone number <br> with country code but without "+" sign:</br></align> </label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+      <button id="whatsapp-btn" type="button" onclick="generateWhatsAppLink()"> <i class="fab fa-whatsapp"></i> <font ="trebuchet ms"></font> Generate WhatsApp link</button>
+      <button id="telegram-btn" type="button" onclick="generateTelegramLink()"> <i class="fab fa-telegram">  </i>  Generate Telegram link</button>
+    </form>
+    
+    <script>
+      function generateWhatsAppLink() {
+        var phone = document.getElementById("phone").value;
+        var link = "https://wa.me/" + phone;
+        window.location.href = link;
+      }
+      
+      function generateTelegramLink() {
+        var phone = document.getElementById("phone").value;
+        var link = "https://t.me/+" + phone;
+        window.location.href = link;
+      }
+    </script>
+  </body>
+</html>
+
+	</div>
+	<footer class="footer">Developed by Dwapar Buch with ChatGPT | Version 1.0</footer>
+	<script src="https
